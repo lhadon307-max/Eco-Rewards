@@ -1,0 +1,28 @@
+/* EcoRewards v7: searchable dropdowns and achievement cards. */
+:root{--eco-accent:#4858ed}
+.eco-picker{position:relative;min-width:0;width:100%}
+.eco-picker-search{width:100%!important;min-width:0!important;box-sizing:border-box;padding:12px 38px 12px 14px!important;border:1.5px solid #c5d3e3!important;border-radius:13px!important;background:#fff!important;color:#14243c!important;font:inherit!important;outline:none;transition:box-shadow .17s,border-color .17s}
+.eco-picker-search:focus{border-color:#4d64ea!important;box-shadow:0 0 0 4px #5b6fff24!important}
+.eco-picker::after{content:'⌄';position:absolute;right:15px;top:12px;color:#52647e;pointer-events:none}
+.eco-picker-menu{position:absolute;top:calc(100% + 5px);left:0;right:0;max-height:232px;overflow-y:auto;overscroll-behavior:contain;z-index:9999;background:#fff;border:1px solid #c7d5e6;border-radius:14px;box-shadow:0 17px 42px #1728492d;padding:5px;display:none}
+.eco-picker.open .eco-picker-menu{display:block}
+.eco-picker-option{display:block;width:100%;text-align:left;background:transparent!important;border:0!important;border-radius:9px!important;color:#1d314d!important;padding:11px 12px!important;font:inherit!important;cursor:pointer}
+.eco-picker-option:hover,.eco-picker-option.is-active{background:#eaf0ff!important;color:#243b9d!important}
+.eco-picker-empty{padding:12px;color:#66748c}
+.eco-picker select{position:absolute!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important}
+.recognition-panel{background:linear-gradient(135deg,#ffffff,#f1f5ff)!important;border:1px solid #dbe3ff!important;box-shadow:0 12px 38px #2c3d7220!important}
+.recognition-title{display:flex;justify-content:space-between;align-items:center;gap:14px}
+#recognition-icon{font-size:55px;filter:drop-shadow(0 5px 12px #8c94c3aa)}
+.recognition-summary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:20px 0}
+.recognition-summary>div{background:white;border:1px solid #e0e5f6;border-radius:13px;padding:15px}
+.recognition-summary small{display:block;color:#536481;margin-bottom:7px}
+.recognition-summary strong{font-size:clamp(17px,2vw,25px);color:#162b59}
+.recognition-progress{height:13px;border-radius:30px;background:#dce5f9;overflow:hidden}
+#recognition-progress-bar{width:0;height:100%;border-radius:30px;background:linear-gradient(90deg,#337fef,#7954d7);transition:width .6s ease}
+.recognition-next{font-weight:600;color:#334c79}
+.recognition-levels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:20px 0}
+.achievement-badge{background:#fff;border:1px solid #d7e2f3;border-radius:14px;text-align:center;padding:15px 8px;min-width:0;display:grid;gap:5px}
+.achievement-badge span{font-size:28px}.achievement-badge strong{font-size:13px;color:#1a3256}.achievement-badge small{color:#536481}
+.achievement-badge.locked{opacity:.55;filter:grayscale(.85)}.achievement-badge.unlocked{border-color:#9db3f8;background:#edf3ff}
+@media(max-width:600px){.recognition-levels{grid-template-columns:1fr}.recognition-summary{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.eco-picker-search,.recognition-progress>div{transition:none!important}}

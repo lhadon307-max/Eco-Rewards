@@ -1,0 +1,95 @@
+/* EcoRewards visual refresh. Legibility and role clarity take priority over ornament. */
+:root{--eco-ink:#14243b;--eco-muted:#465873;--eco-blue:#315df5;--eco-violet:#7748d5;--eco-cyan:#06a4b8;--eco-orange:#f69e36}
+body{color:var(--eco-ink)}button,a,.card,.panel,.kpi{transition:transform .22s ease,box-shadow .22s ease,background-color .22s ease}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #fbbd55!important;outline-offset:3px}
+.app-shell .role-workspace-links{padding:12px 13px 16px;display:grid;gap:8px}
+.app-shell .role-workspace-links .side-label{margin:3px 0 0;font-size:11px;color:#526780!important}
+.app-shell .role-link{display:block;padding:13px 14px;border-radius:12px;background:#e6edff!important;color:#203eac!important;font-weight:800;text-decoration:none;border:1px solid #b4c8ff}
+.app-shell .role-link:hover{background:#dae5ff!important;transform:translateY(-2px)}
+.app-shell .sidebar .nav-item{color:#253d59!important;font-weight:700}
+.app-shell .sidebar .nav-item.active{color:#162b6c!important}
+.app-shell .sidebar{background:#fff!important}
+.app-shell .side-impact{background:linear-gradient(135deg,#f0eaff,#e4f7ff)!important;color:#19284d!important}
+.app-shell .side-impact span{color:#46556c!important}
+.app-shell .side-exit{color:#2d405c!important}
+.app-shell .main-area{background:linear-gradient(145deg,#f5f7ff,#f9faff 48%,#f3fbff)}
+.app-shell .hero{background:linear-gradient(115deg,#202c67 0%,#395dd9 55%,#7656c7 100%)!important;overflow:hidden}
+.app-shell .hero h1,.app-shell .hero p,.app-shell .hero .eyebrow,.app-shell .hero .hero-caption{color:#fff!important}
+.app-shell .hero .hero-art{border-radius:20px;background-image:linear-gradient(120deg,rgba(25,32,76,.03),rgba(55,95,229,.12)),url('/static/images/community-hero.jpg')!important;background-size:cover!important;background-position:center!important;box-shadow:0 12px 38px rgba(16,25,66,.25)}
+.app-shell .card,.app-shell .stat,.app-shell .panel{border-radius:18px;border-color:#dbe3f2;box-shadow:0 10px 28px rgba(30,54,108,.06)}
+.app-shell .stat:nth-child(4n+1){border-top:4px solid #436aff}.app-shell .stat:nth-child(4n+2){border-top:4px solid #0eafb3}.app-shell .stat:nth-child(4n+3){border-top:4px solid #9863e3}.app-shell .stat:nth-child(4n+4){border-top:4px solid #f1a532}
+.app-shell .stat strong{color:#152b5b!important}
+.app-shell .stat small,.app-shell .meta,.app-shell .mini-label{color:#43556d!important}
+.app-shell button.btn:not(.light):not(.soft){background:#315df5;color:white}
+.app-shell .facts{border-radius:18px;overflow:hidden}
+/* Administrative workspace */
+body.intelligence-pro{background:#f4f6ff!important;color:#17243c!important}
+.intelligence-pro aside{background:linear-gradient(175deg,#101e44,#223579 75%,#344389)!important}
+.intelligence-pro aside nav button{color:#dee7ff!important;font-weight:750}
+.intelligence-pro aside nav button.active{background:#4d68ef!important;color:#fff!important;box-shadow:inset 4px 0 #ffcb6c}
+.intelligence-pro aside a{color:#e4eaff!important}
+.intelligence-pro main{background:transparent!important}
+.intelligence-pro .muted,.intelligence-pro p,.intelligence-pro .help-note,.intelligence-pro td{color:#435671!important}
+.intelligence-pro .panel,.intelligence-pro .kpi{border:1px solid #dce4f4!important;box-shadow:0 9px 28px rgba(39,56,112,.075)!important}
+.intelligence-pro .page-hero{position:relative;min-height:230px;background:linear-gradient(120deg,#2744b2,#4e68e4 55%,#8854c8)!important;border-radius:23px;padding:32px 36px!important;overflow:hidden;display:flex;align-items:center;justify-content:space-between;gap:22px;box-shadow:0 16px 36px rgba(46,67,158,.18)}
+.intelligence-pro .page-hero .hero-message{position:relative;z-index:2;max-width:600px}
+.intelligence-pro .page-hero strong{display:block;font-size:clamp(24px,3.2vw,40px)!important;line-height:1.1;color:#fff!important;letter-spacing:-1.2px}
+.intelligence-pro .page-hero p{font-size:14px;color:#f0f4ff!important;max-width:490px;line-height:1.6}
+.intelligence-pro .hero-eyebrow{display:block;color:#d9e7ff;font-weight:850;font-size:10px;letter-spacing:2px;margin-bottom:12px}
+.intelligence-pro .hero-badges{display:flex;flex-wrap:wrap;gap:10px}
+.intelligence-pro .hero-badges span{border:1px solid rgba(255,255,255,.45);background:rgba(255,255,255,.16);border-radius:30px;color:white;font-size:11px;padding:8px 12px;font-weight:750}
+.intelligence-pro .hero-scene{height:180px;width:29%;min-width:165px;object-fit:cover;border:4px solid rgba(255,255,255,.68);border-radius:23px;transform:rotate(3deg);box-shadow:0 20px 28px rgba(17,27,80,.25)}
+.intelligence-pro .kpis{gap:14px!important}
+.intelligence-pro .kpi{border-top:5px solid #4d68eb!important;padding:22px!important}
+.intelligence-pro .kpi:nth-child(6n+2){border-top-color:#15b4b5!important}.intelligence-pro .kpi:nth-child(6n+3){border-top-color:#f5a72e!important}.intelligence-pro .kpi:nth-child(6n+4){border-top-color:#975fda!important}.intelligence-pro .kpi:nth-child(6n+5){border-top-color:#eb6578!important}.intelligence-pro .kpi:nth-child(6n+6){border-top-color:#28ad70!important}
+.intelligence-pro .kpi small{color:#455570!important;font-size:12px!important}
+.intelligence-pro .kpi b{color:#182956!important;font-size:32px!important}
+.intelligence-pro .panel h3,.intelligence-pro h1{color:#172955!important}
+.intelligence-pro input,.intelligence-pro select,.intelligence-pro textarea{border-color:#b9c7e4!important;color:#192b51!important}
+.intelligence-pro input::placeholder{color:#64748b!important}
+.intelligence-pro button:not(.secondary):not([data-page]){background:#365def!important;color:#fff!important}
+.intelligence-pro button:not(.secondary):hover{filter:brightness(1.06)}
+.intelligence-pro button.secondary{background:#e8efff!important;color:#263f95!important}
+.intelligence-pro button:hover{transform:translateY(-1px)}
+.intelligence-pro .panel:hover,.intelligence-pro .kpi:hover{box-shadow:0 12px 34px rgba(39,56,112,.12)!important}
+.intelligence-pro table th{background:#eaf0ff;color:#243866!important;font-size:12px!important}
+.intelligence-pro .data-bar i{background:linear-gradient(90deg,#3866f0,#1fbbb5)!important}
+/* Cleaner review cards: preview actual uploaded equipment evidence */
+.intelligence-pro .cleaner-review-card{background:#fff;border:1px solid #dfe7f5;border-radius:18px;padding:20px;margin:16px 0;box-shadow:0 8px 23px rgba(27,47,108,.06)}
+.intelligence-pro .review-head{display:flex;justify-content:space-between;gap:14px;align-items:center}
+.intelligence-pro .review-head strong{display:block;font-size:17px;color:#192b51}
+.intelligence-pro .review-head small{display:block;color:#54627a;margin-top:4px}
+.intelligence-pro .review-status{background:#fff0dc;color:#8f5200;border-radius:22px;font-size:11px;padding:8px 12px;font-weight:800;text-transform:capitalize}
+.intelligence-pro .review-status.is-approved{background:#d9f8e8;color:#126c43}
+.intelligence-pro .review-content{display:grid;grid-template-columns:1.5fr 1fr;gap:22px;margin:17px 0}
+.intelligence-pro .review-content h4{font-size:12px;color:#334668;letter-spacing:.3px;margin:0 0 12px}
+.intelligence-pro .evidence-gallery{display:flex;flex-wrap:wrap;gap:10px}
+.intelligence-pro .evidence-image{display:grid;gap:6px;color:#25467e;font-size:11px;font-weight:750;text-transform:capitalize;text-decoration:none}
+.intelligence-pro .evidence-image img{width:98px;height:80px;object-fit:cover;border-radius:11px;border:2px solid #dce5f4;background:#f0f4fa}
+.intelligence-pro .error-text{color:#b42336!important;font-weight:750}
+.intelligence-pro .empty-state{padding:26px;background:#eef3ff;border-radius:12px;color:#345077}
+#status:not(:empty){background:#e9f5ff;border:1px solid #c9e5ff;border-radius:10px;padding:12px!important;color:#17518a!important;font-weight:700}
+/* Cleaner account: brighter and approachable */
+body.cleaner-pro{background:#f5f8ff!important;color:#1d3051!important}
+.cleaner-pro .cleaner-aside{background:linear-gradient(165deg,#1e347f,#365bd8)!important}
+.cleaner-pro .cleaner-aside a,.cleaner-pro .subbrand{color:#ecf1ff!important}
+.cleaner-pro .feature-intro{position:relative;min-height:210px;background:linear-gradient(115deg,#3045b7,#3d7acb)!important;overflow:hidden;display:flex;justify-content:space-between;gap:18px}
+.cleaner-pro .feature-intro h2,.cleaner-pro .feature-intro p{color:white!important}
+.cleaner-pro .feature-intro .cleaner-photo{width:32%;max-width:250px;min-width:130px;border-radius:16px;object-fit:cover;border:3px solid rgba(255,255,255,.65)}
+.cleaner-pro article{border:1px solid #dce6f5!important;box-shadow:0 9px 25px rgba(23,55,113,.06)}
+.cleaner-pro article p,.cleaner-pro small,.cleaner-pro label{color:#334762!important}
+.cleaner-pro article button{background:#355de8!important;color:#fff!important}
+.cleaner-pro #verification{display:inline-block;padding:10px 14px;background:#e8f0ff;border-radius:12px;color:#213d9c;font-weight:850}
+.cleaner-pro #msg:not(:empty){position:sticky;bottom:10px;background:#e8f6ff;border:1px solid #b5daf8;border-radius:12px;padding:15px;color:#1d4c81;font-weight:700;z-index:5}
+@media(max-width:830px){.intelligence-pro .hero-scene{display:none}.intelligence-pro .review-content{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:no-preference){.intelligence-pro .page-hero,.app-shell .hero,.cleaner-pro .feature-intro{animation:eco-enter .5s ease both}.intelligence-pro .kpi{animation:eco-enter .42s ease both}.intelligence-pro .kpi:nth-child(2){animation-delay:.06s}.intelligence-pro .kpi:nth-child(3){animation-delay:.12s}.intelligence-pro .kpi:nth-child(4){animation-delay:.18s}@keyframes eco-enter{from{opacity:.3;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}}
+
+.cleaner-pro .check-status-button{background:#ecf0ff!important;color:#2544a3!important;border:1px solid #cbd5fa;font-size:12px;margin-left:12px}
+
+/* v9 — actionable dashboard KPIs */
+.app-shell .metric-link{display:block;width:100%;font:inherit;text-align:left;cursor:pointer;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;background:linear-gradient(150deg,#fff 55%,#eff6ff)}
+.app-shell .metric-link:hover,.app-shell .metric-link:focus-visible{transform:translateY(-4px);box-shadow:0 18px 34px rgba(26,78,155,.17);border-color:#3771f0;outline:2px solid transparent}
+.app-shell .metric-link:focus-visible{outline:3px solid #3771f0;outline-offset:3px}
+.app-shell .metric-go{display:inline-block;margin-top:14px;font-size:12px;font-weight:800;color:#2359c5}
+.app-shell .dashboard-metrics{margin-bottom:23px}
+@media(prefers-reduced-motion:reduce){.app-shell .metric-link{transition:none}.app-shell .metric-link:hover{transform:none}}

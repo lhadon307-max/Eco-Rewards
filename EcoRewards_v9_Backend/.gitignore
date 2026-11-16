@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+*.db
+*.sqlite*
+*.log
+__pycache__/
+*.pyc
+backend/private_equipment/
+backend/uploads/*
+!backend/uploads/.gitkeep
+.venv/

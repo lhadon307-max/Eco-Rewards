@@ -1,0 +1,49 @@
+/* Sidebar usability fix: keep every menu item and Sign out reachable on short screens. */
+.app-shell .sidebar {
+  height: 100vh;
+  height: 100dvh;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: #b7c9c4 transparent;
+}
+.app-shell .sidebar .side-spacer { flex: 1 0 12px; }
+.app-shell .sidebar .side-exit {
+  position: sticky;
+  bottom: -20px;
+  z-index: 3;
+  flex-shrink: 0;
+  background: #fff;
+  border-top: 1px solid #e5ecea;
+  margin: 14px -1px -20px;
+  padding: 15px 12px 20px;
+  text-align: left;
+  width: calc(100% + 2px);
+  color: #254f47;
+}
+.app-shell .sidebar .side-exit:hover { background: #f1f6f5; }
+body.intelligence-pro > aside {
+  height: 100vh !important;
+  height: 100dvh !important;
+  min-height: 0 !important;
+  overflow-y: auto !important;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+}
+body.intelligence-pro > aside nav { flex-shrink: 0; }
+@media (max-width: 800px) {
+  body.intelligence-pro > aside {
+    height: auto !important;
+    max-height: none !important;
+    overflow-y: visible !important;
+  }
+}
+@media (max-width: 760px) {
+  .app-shell .sidebar {
+    height: 100vh;
+    height: 100dvh;
+  }
+}

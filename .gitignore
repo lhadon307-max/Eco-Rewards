@@ -1,0 +1,19 @@
+# Node, Expo and Python build products
+**/node_modules/
+**/.expo/
+**/dist/
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/*.log
+# Private settings and uploads
+**/.env
+**/.env.*
+!**/.env.example
+**/uploads/
+**/*.sqlite
+**/*.sqlite3
+**/*.db
+# Local project artefacts
+.DS_Store
+Thumbs.db
